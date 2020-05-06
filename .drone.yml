@@ -11,5 +11,5 @@ steps:
 - name: notify
   image: plugins/slack
   settings:
-    webhook: https://hooks.slack.com/services/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
-    recipient: Adam Toy
+    webhook: https://hooks.slack.com/services/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
+    channel: test-channel
