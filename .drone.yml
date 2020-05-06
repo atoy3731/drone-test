@@ -8,3 +8,8 @@ steps:
   image: golang:1.12
   commands:
   - ps aux
+- name: notify
+  image: plugins/slack
+  settings:
+    webhook: https://hooks.slack.com/services/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
+    recipient: Adam Toy
