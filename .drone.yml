@@ -8,8 +8,8 @@ steps:
   image: golang:1.12
   commands:
   - ps aux
-
-notify:
-    image: plugins/slack
-    webhook_url: https://hooks.slack.com/services/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
-    channel: test-channel
+- name: notify
+  image: plugins/slack
+  settings:
+    from_secret: slacksecret
+  channel: test-channel
