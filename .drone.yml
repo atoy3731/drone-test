@@ -11,5 +11,6 @@ steps:
 - name: notify
   image: plugins/slack
   settings:
-    from_secret: slacksecret
+    webhook:
+      from_secret: slacksecret
   channel: test-channel
