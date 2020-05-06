@@ -11,5 +11,4 @@ steps:
 - name: notify
   image: plugins/slack
   settings:
-    webhook: https://hooks.slack.com/services/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
-    channel: test-channel
+    webhook: https://hooks.slack.com/services/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
