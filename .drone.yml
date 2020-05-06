@@ -1,0 +1,24 @@
+---
+kind: pipeline
+type: docker
+name: linux-amd64
+
+platform:
+  arch: amd64
+  os: linux
+
+clone:
+  depth: 50
+  tags: true
+  skip_verify: true
+
+steps:
+- name: test
+  image: golang:1.13.0
+  commands:
+  - ps aux
+- name: slack
+  image: plugin/slack
+  settings:
+    webhook: https://hooks.slack.com/services/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
+    channel: cicd
