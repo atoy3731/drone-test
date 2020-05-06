@@ -11,5 +11,5 @@ steps:
 - name: notify
   image: plugins/slack
   settings:
-    from_secret: tech-slack
+    from_secret: slack-secret
   channel: test-channel
